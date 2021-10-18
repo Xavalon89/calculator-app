@@ -1,0 +1,38 @@
+.Display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 5%;
+    height: 20%;
+    color: #fff;
+    font-size: 12vh;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.data {
+    align-self: flex-end;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (orientation: landscape), (min-width: 600px) {
+    .Display {
+        margin-bottom: 2%;
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+    .Display {
+        height: 15%;
+        font-size: 6vh;
+    }
+} */

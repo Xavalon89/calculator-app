@@ -1,0 +1,59 @@
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 80px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.Button[data-color="operator"] {
+    color: #37246b;
+    background: #eecf43;
+    border: 2px solid #eecf43;
+}
+
+.Button[data-color="clear"] {
+    color: #fff;
+    border: 2px solid #eecf43;
+}
+
+.Button[data-height="2"] {
+    grid-row: 4 / span 5;
+    grid-column: 4;
+    aspect-ratio: 1 / 2.3;
+}
+
+.Button[data-width="2"] {
+    grid-column: 1 / span 2;
+    aspect-ratio: 2 / 1;
+}
+
+.Button[data-value="null"] {
+    pointer-events: none;
+    border: none;
+}
+
+.Button:active {
+    background: #ffffffce;
+}
+
+@media only screen and (orientation: landscape), (min-width: 500px) {
+    .Button {
+        aspect-ratio: none;
+        height: 8vh;
+        font-size: 4vw;
+    }
+
+    .Button[data-height="2"] {
+        aspect-ratio: none;
+        height: 20vh;
+    }
+
+    .Button[data-width="2"] {
+        aspect-ratio: none;
+    }
+}

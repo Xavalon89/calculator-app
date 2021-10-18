@@ -1,0 +1,6 @@
+{
+	"appId": "com.xander.app",
+	"appName": "calculator",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
