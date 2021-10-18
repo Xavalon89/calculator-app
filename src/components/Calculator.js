@@ -56,8 +56,7 @@ class Calculator extends Component {
         }
     }
 
-    // think of better case for '.'
-    // must test whether there are any other periods
+    // . needs another case to prevent more than 1
 
     render(){
         return(
